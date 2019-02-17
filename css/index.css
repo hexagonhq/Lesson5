@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    background: #fafafa;
+}
+
+/*
+container
+==============================*/
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+}
+
+/*
+header
+==============================*/
+.header {
+    position: relative;
+    height: 400px;
+    padding-top: 85px;
+}
+
+.header-background {
+    background: transparent url("../img/banner/min-bg.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+}
+
+.header-background:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.position-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.heading {
+    font-size: 42px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 85px;
+}   
+
+/*
+header-logo
+==============================*/
+.header-logo {
+    display: block;
+    width: 135px;
+    height: auto;
+    background-color: #fff;
+    border-top: 1px solid #8C0038;
+}
+
+/*
+header-nav
+==============================*/
+.navigation {
+    padding: 27px 40px;
+    background-color: #fff;
+}
+
+.navigation-item {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.navigation-item:last-child {
+    margin-right: 0;
+}
+
+.navigation-link,
+.sibar-link {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #323232;
+}
+
+.navigation-link:hover {
+    color: #8C0038;
+}
+
+/*
+sidebar
+==============================*/
+.sidebar {
+    position: sticky;
+    top: 0;
+    width: 300px;
+    background-color: #fff;
+    float: left;
+}
+
+.sidebar-head {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(-216deg,#D63A76 0,#8C0038 100%);
+    padding: 15px;
+}
+
+.sidebar-item {
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.sibar-link {
+    font-weight: 500;
+    padding: 15px 10px;
+}
+
+.internal {
+    position: relative;
+    padding: 0 15px;
+}
+
+.internal::before,
+.internal::after {
+    content: "";
+    display: block;
+    height: 15px;
+    background: linear-gradient(to bottom,#f0f0f0 0,#fff 100%);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+.internal::after {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    background: -webkit-linear-gradient(top,#fff 0,#f0f0f0 100%);
+}
+
+.internal-item {
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.internal-link {
+    display: block;
+    font-weight: 300;
+    color: #222;
+    padding: 15px;
+}
+
+/*
+content
+==============================*/
+.content {
+    width: calc(100% - 345px);
+    float: right;
+    padding: 15px;
+    margin-left: 15px;
+    background-color: #fff;
+    position: relative;
+    top: calc(-100px / 2);
+    z-index: 10;
+}
+
+.content-heading {
+    font-size: 28px;
+    font-weight: 500;
+    color: #D63A76;
+}
+
+.content-text {
+    font-size: 18px;
+    line-height: 1.5685;
+    color: #53535C;
+}
+
+.registration {
+    font-weight: 600;
+}
+
+.pretitle {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.wrapper-btn {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.btn-ticket {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 65px;
+    letter-spacing: 2px;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0 25px;
+    height: 50px;
+    width: auto;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin-top: 25px;
+    position: relative;
+}
+
+.copyright {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    margin-top: calc(-15px / 2);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #53535C;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::after { 
+    content: '';
+    clear: both; 
+    display: block;
+}
+
+.pdngr {
+    padding-right: 20px;
+}
+
+.mrgnb {
+    margin-bottom: 20px;
+}
